@@ -9,7 +9,21 @@ load_dotenv()
 
 def configurar_layout():
     st.set_page_config(page_title="Farmácia CI - Gestão", page_icon="💊", layout="wide")
-    st.title("💊 Sistema de Vendas e Estoque CI")
+    
+    # Cria duas colunas com proporção de tamanho (a segunda é bem maior que a primeira)
+    col_logo, col_titulo = st.columns([1, 15])
+    
+    with col_logo:
+        try:
+            # Ajuste o width (largura) se achar que ficou muito grande ou pequena
+            st.image("LogoCI.jpeg", width=70) 
+        except FileNotFoundError:
+            st.warning("⚠️ Imagem LogoCI.jpeg não encontrada na pasta.")
+            
+    with col_titulo:
+        # Coloquei uma pequena margem (usando HTML) para alinhar perfeitamente com a imagem
+        st.markdown("<h1 style='margin-top: -15px;'>💊 Sistema de Vendas e Estoque CI</h1>", unsafe_allow_html=True)
+        
     st.markdown("---")
 
 def renderizar_dashboard(manager: CrudManager):
