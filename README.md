@@ -11,6 +11,7 @@ Sistema de gerenciamento de estoque e vendas desenvolvido com foco em alta coes�
 ## ✨ Funcionalidades Principais
 
 * **📊 Dashboard Operacional**: Visão em tempo real do valor patrimonial, faturamento total e itens em estoque.
+<<<<<<< HEAD
 * **📦 Gestão de Estoque (CRUD)**: 
     * Cadastro de produtos com categorias, preços e origem.
     * Filtros avançados (busca por ID, nome e produtos com baixo estoque).
@@ -20,6 +21,17 @@ Sistema de gerenciamento de estoque e vendas desenvolvido com foco em alta coes�
     * Busca interativa com cálculo prévio de descontos estatutários aplicáveis.
 * **🛒 Módulo de Vendas (PDV)**: 
     * Carrinho de compras dinâmico.
+=======
+* **📦 Gestão de Estoque (CRUD)**:
+  * Cadastro de produtos com categorias, preços e origem.
+    * Filtros avançados (busca por ID, nome e produtos com baixo estoque).
+    * Remoção segura com confirmação dupla.
+* **👥 Gestão de Pessoas**:
+  * Cadastro e controle de **Clientes** (Alunos/Professores) e **Vendedores**.
+    * Busca interativa com cálculo prévio de descontos estatutários aplicáveis.
+* **🛒 Módulo de Vendas (PDV)**:
+  * Carrinho de compras dinâmico.
+>>>>>>> temp-salva-codigo
     * Cálculo automático de descontos cumulativos baseados em regras de negócio específicas (Torce Flamengo, Assiste One Piece, É de Sousa).
     * Controle transacional rígido: baixa automática de estoque e rollback em caso de falhas (`EstoqueInsuficienteError`).
 
@@ -37,6 +49,13 @@ Sistema de gerenciamento de estoque e vendas desenvolvido com foco em alta coes�
 ## 🚀 Como Executar o Projeto
 
 ### 1. Clonar o Repositório
+<<<<<<< HEAD
 ```bash
 git clone [https://github.com/Pedrojaug/ci-drugstore.git](https://github.com/Pedrojaug/ci-drugstore.git)
 cd ci-drugstore
+=======
+
+```bash
+git clone [https://github.com/Pedrojaug/ci-drugstore.git](https://github.com/Pedrojaug/ci-drugstore.git)
+cd ci-drugstore
+>>>>>>> temp-salva-codigo
